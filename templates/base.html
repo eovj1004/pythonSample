@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Snow Landing Page Theme | Created By Visual Soldiers</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/popup.css' %}">
+  <link rel="stylesheet" href="{% static 'css/form.css' %}">
+  <script src="{% static 'js/modernizr-2.7.1.js' %}"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	  <a class="logo" href="index.html"><img src="{% static 'img/logo.svg' %}" alt="Logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            {% if request.session.login_user != None %}
+            <li><a href="/smplBoard/list">サンプルボード</a></li>
+            {% endif %}
+            <li><a href="/scraping/yahoo">Web Scraping</a></li>
+            {% if request.session.login_user == None %}
+            <li><a class="btn-popup" href="#layer2">ログイン</a></li>
+            {% else %}
+            <li><a class="btn-popup" href="/user/logout">ログアウト</a></li>
+            {% endif %}
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+        
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+		  <a href="index.html"><img src="{% static 'img/logo.svg' %}" alt="Logo"></a>
+          </div>
+          <div class="col-xs-6 signin text-right navbar-nav">
+            {% if request.session.login_user != None %}
+            <a href="/smplBoard/list">サンプルボード</a>&nbsp; &nbsp;
+            {% endif %}
+            <a href="/scraping/yahoo">Web Scraping</a>&nbsp; &nbsp;
+            {% if request.session.login_user == None %}
+            <a class="btn-popup" href="#layer2">ログイン</a>
+            {% else %}
+            <a class="btn-popup" href="/user/logout">ログアウト</a>
+            {% endif %}
+          </div>
+        </div>
+        
+        <div class="row header-info">
+          <div class="col-sm-10 col-sm-offset-1 text-center">
+            <h1 class="wow fadeIn">Choi's Python Sample Project</h1>
+            <br />
+            <p class="lead wow fadeIn" data-wow-delay="0.5s">メインページは無料テンプレートをダウンロードしたデザインです. <br>
+            右上のSample Boardリンクのとこは全部自分で作成したページです.</p>
+            <br />
+              
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="row">
+                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="1s">
+                    <a href="#be-the-first" class="btn btn-secondary btn-lg scroll">Learn More</a>
+                  </div>
+                  <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
+                    <a href="#invite" class="btn btn-primary btn-lg scroll">メール発送</a>
+                  </div>
+                </div><!--End Button Row-->  
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+
+    {% block content %}
+    {% endblock content %}
+    
+    </div>
+    <footer>
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-8 margin-20">
+            <ul class="list-inline social">
+              <li>Connect with us on</li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          
+          <div class="col-sm-4 text-right">
+            <p><small>Copyright &copy; 2019. All rights reserved. <br>
+	            Created by CDH</small></p>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    
+    <div class="dim-layer">
+        <div class="dimBg"></div>
+        <div id="layer2" class="pop-layer">
+            <div id="loginForm" class="pop-container">
+                <div class="pop-conts m_10">
+                    <label>
+                      ID
+                    </label>
+                    <input class="w_full" type="text" id="login_id" name="login_id" />
+                    <label class="mt_15">
+                      PASSWORD
+                    </label>
+                    <input class="w_full" type="password" id="login_pw" name="login_pw" />
+
+
+                    <div class="btn-r">
+                        <a href="#" id="btn_com_join" class="btn-blue">Join</a>
+                        <a href="#" id="btn_com_login" class="btn-blue">Login</a>
+                        <a href="#" id="closeBtn" class="btn-layerClose">Close</a>
+                    </div>
+                    <!--// content-->
+                </div>
+            </div>
+            <div id="joinForm" class="pop-container disp_none">
+                <div class="pop-conts m_10">
+                    <h3>Regist User</h3>
+                    <hr class="title">
+                    <form id="registForm" name="registForm" method="post" enctype="multipart/form-data" action="/user/regist">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="border-top-gray">
+                            <label>
+                                ID
+                            </label>
+                            <input class="w_full" type="text" id="id" name="id" />
+                            
+                            <label class="mt_15">
+                                PASSWORD
+                            </label>
+                            <input class="w_full" type="password" id="pw" name="pw" />
+                            
+                            <label class="mt_15">
+                                Verify Password
+                            </label>
+                            <input class="w_full" type="password" id="pw2" name="pw2" />
+
+                            <label class="mt_15">
+                                Picture
+                            </label>
+                            <input class="w_full" type="file" id="picture" name="picture" />
+
+                            <div class="btn-r">
+                                <a href="#" id="btn_com_cancel" class="btn-blue">Cancel</a>
+                                <a href="#" id="btn_com_regist" class="btn-blue">Regist</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{% static 'js/jquery-1.11.0.min.js' %}"><\/script>')</script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/popup.js' %}"></script>
+    <script src="{% static 'js/common.js' %}"></script>
+    
+    </body>
+</html>

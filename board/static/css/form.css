@@ -1,0 +1,108 @@
+/*!
+ * 
+ * 2019-04-24
+ * 
+ * サンプルプロジェクトCSS
+ *
+ * 　　　　　チェ　デホ
+ */
+
+
+/* ==========================================================================
+   mainからカスタムが必要なところのcss
+   ========================================================================== */
+
+.m_10{
+	margin: 10px;
+}
+
+.w_full{
+	width: 100%;
+}
+
+.mt_15{
+	margin-top: 15px;
+}
+
+.bg_gray{
+	background-color: #f9f9f9;
+}
+
+.bg_navi {
+	background-color: #286090;
+}
+
+.bg_green{
+	background-color: #4caf50;	
+}
+
+.bg_red{
+	background-color: #f44336;	
+}
+
+.disp_none{
+	display: none;
+}
+
+.border-top-gray{
+	border-top: gray;
+}
+
+hr.title{
+	width: 100%;
+	color: gray;
+	border-top: 1px solid gray;
+	margin-top: 0px;
+}
+
+.content_area{
+	width: 68%;
+    margin: 0 17% 0 17%;
+    display: inline-grid;
+}
+
+.sub_title {
+    margin-bottom: 46px;
+}
+
+.sub_title > label {
+	font-size: 27px;
+}
+
+.btn_area_right{
+	text-align: right;
+	margin: 20px 0 10px 0;
+}
+
+.btn_area_right > span {
+    padding: 7px 30px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: #286090;
+    color: white;
+    cursor: pointer;
+}
+
+.blank_15{
+	width:15px; 
+	display: inline-block;
+}
+
+input[type=radio]{
+	margin-left: 5px;
+}
+
+.font_gray{
+	color: #999;
+}
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.pointer{
+	cursor: pointer;
+}

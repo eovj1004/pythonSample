@@ -1,0 +1,21 @@
+#lock{
+    width: 12px;
+    margin-bottom: 4px;
+}
+
+.list_board > tbody > tr > th{
+	text-align: center;
+	font-weight: bold;
+	font-size: 17px;
+	padding: 8px 0 8px 0;
+	background-color: #eee;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.list_board > tbody > tr > td{
+	text-align: center;
+	font-size: 17px;
+	padding: 8px 0 8px 0;
+	border-bottom: 1px solid black;
+}

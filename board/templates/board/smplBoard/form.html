@@ -1,0 +1,146 @@
+{% extends "content_base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/smart_editor/froala_editor.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/froala_style.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/code_view.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/colors.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/emoticons.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/image_manager.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/image.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/line_breaker.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/table.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/char_counter.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/video.css' %}">	
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/fullscreen.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/file.css' %}">
+<link rel="stylesheet" href="{% static 'css/smart_editor/plugins/quick_insert.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+<link rel="stylesheet" href="{% static 'css/smplBoard/form.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="content_area">
+	<div class="sub_title">
+		<label>投稿ページ</label>
+	</div>
+
+	<form id="smpl_form" name="smpl_form">
+		<input type="hidden" id="board_id" name="board_id" value="{{ board.id }}" />
+		{% csrf_token %}
+        {{ form.as_p }}
+		<table class="board_table">
+			<colgroup>
+				<col />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>
+						タイトル
+					</th>
+					<td>
+						<div class="setting_row">
+							<input type="text" id="title" name="title" />
+						<div>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						非公開可否
+					</th>
+					<td>
+						<div class="setting_row">
+							公開<input type="radio" id="is_secret" name="is_secret" value="0" />
+							<div class="blank_15"></div>
+							非公開<input type="radio" id="is_secret" name="is_secret" value="1" />
+						</div>
+					</td>
+				</tr>
+				<tr id="pw_area" class="disp_none">
+					<th>
+						パスワード
+					</th>
+					<td>
+						<div class="setting_row">
+							<input type="password" id="password" name="password" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="hidden" id="content" name="content" />
+						<div id='edit' style="padding-bottom: 2px;">
+	      
+	    				</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+	<div class="btn_area_right">
+		<span id="btn_cancel">キャンセル</span>
+		{% if board %}
+		<span id="btn_modify">修正</span>
+		{% else %}
+		<span id="btn_regist">投稿</span>
+		{% endif %}
+	</div>
+</div>
+{% endblock content %}
+
+
+{% block script %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+
+<script type="text/javascript" src="{% static 'js/smart_editor/froala_editor.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/align.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/char_counter.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/code_beautifier.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/code_view.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/colors.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/draggable.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/emoticons.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/entities.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/file.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/font_size.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/font_family.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/fullscreen.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/image.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/image_manager.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/line_breaker.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/inline_style.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/link.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/lists.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/paragraph_format.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/paragraph_style.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/quick_insert.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/quote.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/table.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/save.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/url.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/smart_editor/plugins/video.min.js' %}"></script>
+
+<script src="{% static 'js/smpl_board/form.js' %}"></script>
+
+<script type="text/javascript">
+	$(function (){
+		$('#title').val('{{ board.title }}');
+		
+		if('{{ board.is_secret }}' == 'True'){
+			$('input[name="is_secret"]:radio[value="1"]').prop('checked',true);
+			$('#pw_area').show();
+			$('#password').val('{{ board.password }}');
+		}
+		else{
+			$('input[name="is_secret"]:radio[value="0"]').prop('checked',true);
+		}
+		
+		$('#edit').froalaEditor('html.set', '{% autoescape off %}{{board.content}}{% endautoescape %}');
+	});
+</script>
+{% endblock script %}

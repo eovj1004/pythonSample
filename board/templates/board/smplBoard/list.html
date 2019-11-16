@@ -1,0 +1,100 @@
+{% extends "content_base.html" %}
+{% load static %}
+{% load custom_tags %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/smplBoard/list.css' %}">
+{% endblock css %}
+
+
+{% block content %}
+<div class="content_area">
+	<div class="sub_title">
+		<label>Sample Board</label>
+	</div>
+	<div class="btn_area_right">
+		<span id="btn_regist">投稿</span>
+	</div>
+	<table class="list_board">
+		<colgroup>
+			<col />
+			<col />
+			<col />
+			<col />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th>
+					no.
+
+				</th>
+				<th>
+					タイトル
+				</th>
+				<th>
+					作成日
+				</th>
+				<th>
+					作成者
+				</th>
+			</tr>
+			{% for board in page_data.object_list %}
+			<tr>
+				<td>
+					{{idx_top|minus:forloop.counter0}}
+
+				</td>
+				<td>
+					{% if board.is_secret and board.user.id != request.session.login_user %}
+					<span class="pointer" onclick="checkPassword('{{board.id}}')">{{board.title}}</span>
+					<img id="lock" src='{% static "img/lock.jpg" %}' />
+					{% else %}
+					<a href="/smplBoard/view?board_id={{board.id}}">{{board.title}}</a>
+					{% endif %}
+					
+				</td>
+				<td>
+					{{board.write_date|date:"Y-m-d"}}
+				</td>
+				<td>
+					{{board.user.user_id}}
+				</td>
+			</tr>
+			{% endfor %}
+			{% if page_data.previous_page_number is None %}
+			<tr>
+				<td colspan="4">
+					投稿されたデータが存在してません。
+				</td>
+			</tr>
+			{% endif %}
+		</tbody>
+	</table>
+	<div class="pagination">
+	    <span class="step-links">
+	        {% if page_data.has_previous %}
+	            <a href="?page_index=1">&laquo;</a>
+	            <a href="?page_index={{ page_data.previous_page_number }}">previous</a>
+	        {% endif %}
+
+	        {% if page_data %}
+	        <span class="current">
+	            Page {{ page_data.number }} of {{ page_data.paginator.num_pages }}.
+	        </span>
+	        {% endif %}
+
+	        {% if page_data.has_next %}
+	            <a href="?page_index={{ page_data.next_page_number }}">next</a>
+	            <a href="?page_index={{ page_data.paginator.num_pages }}">last &raquo;</a>
+	        {% endif %}
+	    </span>
+	</div>
+</div>
+
+
+{% endblock content %}
+
+
+{% block script %}
+<script src="{% static 'js/smpl_board/list.js' %}"></script>
+{% endblock script %}

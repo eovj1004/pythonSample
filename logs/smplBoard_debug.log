@@ -1,0 +1,265 @@
+[29/Sep/2019 11:55:50] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 11:55:50] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 11:55:55] DEBUG [board.smplBoard.views:265] Call checkPassword
+[29/Sep/2019 11:55:55] DEBUG [board.smplBoard.views:274] board_id：32
+input_pw：1234
+[29/Sep/2019 11:55:55] DEBUG [board.smplBoard.views:277] パスワード一致
+[29/Sep/2019 11:55:55] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 11:55:55] DEBUG [board.smplBoard.views:229] board_id:32
+[29/Sep/2019 11:55:55] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：32
+[29/Sep/2019 11:56:09] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 11:56:09] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 11:56:15] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 11:56:15] DEBUG [board.smplBoard.views:229] board_id:31
+[29/Sep/2019 11:56:15] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：31
+[29/Sep/2019 11:56:48] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 11:56:48] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 11:56:50] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 11:56:50] DEBUG [board.smplBoard.views:229] board_id:31
+[29/Sep/2019 11:56:50] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：31
+[29/Sep/2019 11:56:52] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 11:56:52] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 11:56:54] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 11:56:54] DEBUG [board.smplBoard.views:229] board_id:30
+[29/Sep/2019 11:56:54] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：30
+[29/Sep/2019 11:59:23] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 11:59:23] DEBUG [board.smplBoard.views:63] 投稿修正画面
+board_id:30
+[29/Sep/2019 12:00:37] DEBUG [board.smplBoard.views:188] Call boardUpdate
+[29/Sep/2019 12:00:37] DEBUG [board.smplBoard.views:200] 
+board_id:30
+title:投稿テスト
+is_secret:1
+password:1234
+content:<table style="width: 100%; border: none;"><tbody><tr><td style="border: none; vertical-align: top; padding-left: 15px; width: 55.2578%;"><span style="font-size: 18px;">　特に話たいことはありませんですが、一応サンプルなので何か書かなきゃと思いました。写真はみんな知ってると思いますが雪山です。どうでもいい画像じゃないかなと思って結構つまらない投稿になるんだろうなと思ったら嫌なんですけれども、はい。これはサンプルです。ツッコミはやめてください。</span><br><br><span style="font-size: 18px;">　今のところで気づいた方もいるかもしれませんですが、特に内容ってありません。自分はただきれいに出力されるかどうか確認したいだけです。このプラグインってWYSIWYGを実現するために作られたプラグインと書いてて実際サービスする時には有料になるらしいんですが色々作成しにくいです。有料だからクオリティもいいのかなと思っちゃうことを利用したマーケティングじゃないかなと思います。</span></td><td style="border: none; width: 44.7422%;"><img src="http://localhost:8000/media/froala/_A8PPdnV" style="width: 390px;" class="fr-fic fr-dib"><br></td></tr><tr><td colspan="2" style="padding-left: 15px; padding-right: 15px; border: none;"><br></td></tr></tbody></table><p style="margin-left:20px;"><span style="color: rgb(0, 0, 0);">　そろそろ、テストするための文字列は十分入力したのでここで終わりにしようかなと思います。なんか本当にここまで読んだ人がいたら大事な時間取られちゃって可哀そうだなと思いますが、読んだ人いるなら申し訳ございません。連絡したらコーヒーでもおごりますので連絡してください。</span></p><p style="margin-left:20px;"><br></p><p style="margin-left:20px;">　チェ　デホ、+8210 4568 4690 、未婚、180/70、優しいかも。</p>
+[29/Sep/2019 12:00:37] DEBUG [board.smplBoard.views:208] 投稿データ修正
+title:投稿テスト
+[29/Sep/2019 12:00:37] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:00:37] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:00:39] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:00:39] DEBUG [board.smplBoard.views:229] board_id:31
+[29/Sep/2019 12:00:39] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：31
+[29/Sep/2019 12:00:41] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:00:41] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:00:43] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:00:43] DEBUG [board.smplBoard.views:229] board_id:30
+[29/Sep/2019 12:00:43] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：30
+[29/Sep/2019 12:00:56] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:00:56] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:01:01] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 12:01:01] DEBUG [board.smplBoard.views:70] 投稿作成画面
+[29/Sep/2019 12:05:39] DEBUG [board.smplBoard.views:148] Call boardInsert
+[29/Sep/2019 12:05:39] DEBUG [board.smplBoard.views:156] 
+title:Web Scrapping test
+is_secret:0
+password:
+content:<p>リンクテスト。</p><p>下のリンクを押したらyahoo japanのニュースデータを持って来ます。</p><p><br></p><p><a class="fr-green" href="/scrapping/yahoo">yahooの記事持ってくる！</a></p>
+[29/Sep/2019 12:05:39] DEBUG [board.smplBoard.views:167] 投稿データ登録完了
+[29/Sep/2019 12:05:39] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:05:39] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:05:41] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:05:41] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 12:05:41] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 12:05:45] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 12:05:45] DEBUG [board.smplBoard.views:63] 投稿修正画面
+board_id:34
+[29/Sep/2019 12:06:32] DEBUG [board.smplBoard.views:188] Call boardUpdate
+[29/Sep/2019 12:06:32] DEBUG [board.smplBoard.views:200] 
+board_id:34
+title:Web Scrapping test
+is_secret:0
+password:
+content:<p>リンクテスト。</p><p>下のリンクを押したらyahoo japanのニュースデータを持って来ます。</p><p><br></p><p><a class="fr-green" href="/scrapping/yahoo">yahooの記事持ってくる！</a></p>
+[29/Sep/2019 12:06:32] DEBUG [board.smplBoard.views:208] 投稿データ修正
+title:Web Scrapping test
+[29/Sep/2019 12:06:32] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:06:32] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:06:34] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:06:34] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 12:06:34] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 12:06:58] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 12:06:58] DEBUG [board.smplBoard.views:63] 投稿修正画面
+board_id:34
+[29/Sep/2019 12:08:06] DEBUG [board.smplBoard.views:188] Call boardUpdate
+[29/Sep/2019 12:08:06] DEBUG [board.smplBoard.views:200] 
+board_id:34
+title:Web Scrapping test
+is_secret:0
+password:
+content:<p>リンクテスト。</p><p>下のリンクを押したらyahoo japanのニュースデータを持って来ます。</p><p><br></p><p><a class="fr-green" href="#">yahooの記事持ってくる！</a></p>
+[29/Sep/2019 12:08:06] DEBUG [board.smplBoard.views:208] 投稿データ修正
+title:Web Scrapping test
+[29/Sep/2019 12:08:06] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:08:06] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:08:08] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:08:08] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 12:08:08] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 12:08:10] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 12:08:10] DEBUG [board.smplBoard.views:63] 投稿修正画面
+board_id:34
+[29/Sep/2019 12:08:34] DEBUG [board.smplBoard.views:188] Call boardUpdate
+[29/Sep/2019 12:08:34] DEBUG [board.smplBoard.views:200] 
+board_id:34
+title:Web Scrapping test
+is_secret:0
+password:
+content:<p>リンクテスト。</p><p>下のリンクを押したらyahoo japanのニュースデータを持って来ます。</p><p><br></p><p><a class="fr-green" href="#">yahooの記事持ってくる！</a></p>
+[29/Sep/2019 12:08:34] DEBUG [board.smplBoard.views:208] 投稿データ修正
+title:Web Scrapping test
+[29/Sep/2019 12:08:34] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:08:34] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:08:35] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:08:35] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 12:08:35] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 12:08:38] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 12:08:38] DEBUG [board.smplBoard.views:63] 投稿修正画面
+board_id:34
+[29/Sep/2019 12:09:07] DEBUG [board.smplBoard.views:188] Call boardUpdate
+[29/Sep/2019 12:09:07] DEBUG [board.smplBoard.views:200] 
+board_id:34
+title:Web Scrapping test
+is_secret:0
+password:
+content:<p>リンクテスト。</p><p>下のリンクを押したらyahoo japanのニュースデータを持って来ます。</p><p><br></p><p><a class="fr-green" href="#">yahooの記事持ってくる！</a></p>
+[29/Sep/2019 12:09:08] DEBUG [board.smplBoard.views:208] 投稿データ修正
+title:Web Scrapping test
+[29/Sep/2019 12:09:08] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:09:08] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:09:09] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:09:09] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 12:09:09] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 12:09:18] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 12:09:18] DEBUG [board.smplBoard.views:63] 投稿修正画面
+board_id:34
+[29/Sep/2019 12:10:34] DEBUG [board.smplBoard.views:188] Call boardUpdate
+[29/Sep/2019 12:10:34] DEBUG [board.smplBoard.views:200] 
+board_id:34
+title:Web Scrapping test
+is_secret:0
+password:
+content:<p>リンクテスト。</p><p>下のリンクを押してください。</p><p><br></p><p><a class="fr-green" href="/scrapping/yahoo">yahooの記事Scrapping pageを見る</a></p>
+[29/Sep/2019 12:10:34] DEBUG [board.smplBoard.views:208] 投稿データ修正
+title:Web Scrapping test
+[29/Sep/2019 12:10:34] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:10:34] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:10:36] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:10:36] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 12:10:36] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 12:42:49] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:42:49] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:42:51] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:42:51] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 12:42:51] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 12:44:14] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 12:44:14] DEBUG [board.smplBoard.views:63] 投稿修正画面
+board_id:34
+[29/Sep/2019 12:44:57] DEBUG [board.smplBoard.views:188] Call boardUpdate
+[29/Sep/2019 12:44:57] DEBUG [board.smplBoard.views:200] 
+board_id:34
+title:Web Scrapping test
+is_secret:0
+password:
+content:<p>リンクテスト。</p><p>下のリンクを押してください。</p><p><br></p><p><span style="color: rgb(44, 130, 201);"><a class="fr-green" href="/scraping/yahoo"><u>yahooの記事Scrapping pageを見る</u></a></span></p>
+[29/Sep/2019 12:44:57] DEBUG [board.smplBoard.views:208] 投稿データ修正
+title:Web Scrapping test
+[29/Sep/2019 12:44:57] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 12:44:57] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 12:44:59] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 12:44:59] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 12:44:59] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 13:11:48] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 13:11:48] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 13:11:50] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 13:11:50] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 13:11:50] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 13:15:44] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 13:15:44] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 13:15:45] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 13:15:45] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 13:15:45] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 13:21:50] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 13:21:50] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 13:21:52] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 13:21:52] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 13:21:52] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 13:22:32] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 13:22:32] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 13:22:37] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 13:22:37] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 13:22:37] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 13:23:02] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 13:23:02] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 13:23:03] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 13:23:03] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 13:23:03] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 15:35:03] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 15:35:03] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 15:35:05] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 15:35:05] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 15:35:05] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 15:54:25] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 15:54:25] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 15:54:26] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 15:54:26] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 15:54:26] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 16:03:08] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:03:08] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 16:03:16] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 16:03:16] DEBUG [board.smplBoard.views:229] board_id:34
+[29/Sep/2019 16:03:16] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：34
+[29/Sep/2019 16:12:32] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:12:32] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 16:12:35] DEBUG [board.smplBoard.views:224] Call boardView
+[29/Sep/2019 16:12:35] DEBUG [board.smplBoard.views:229] board_id:30
+[29/Sep/2019 16:12:35] DEBUG [board.smplBoard.views:251] 投稿照会
+投稿ID：30
+[29/Sep/2019 16:12:37] DEBUG [board.smplBoard.views:56] Call registForm
+[29/Sep/2019 16:12:37] DEBUG [board.smplBoard.views:63] 投稿修正画面
+board_id:30
+[29/Sep/2019 16:15:51] DEBUG [board.smplBoard.views:188] Call boardUpdate
+[29/Sep/2019 16:15:51] DEBUG [board.smplBoard.views:200] 
+board_id:30
+title:投稿テスト
+is_secret:1
+password:1234
+content:<table style="width: 100%; border: none;"><tbody><tr><td style="border: none; vertical-align: top; padding-left: 15px; width: 55.2578%;"><span style="font-size: 18px;">　サンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータサンプルデータ</span></td><td style="border: none; width: 44.7422%;"><img src="http://localhost:8000/media/froala/_A8PPdnV" style="width: 390px;" class="fr-fic fr-dib"><br></td></tr><tr><td colspan="2" style="padding-left: 15px; padding-right: 15px; border: none;"><br></td></tr></tbody></table><p style="margin-left:20px;"><span style="color: rgb(0, 0, 0);">　</span></p><p style="margin-left:20px;"><br></p><p style="margin-left:20px;">　チェ　デホ、+8210 4568 4690 、未婚、180/70、優しいかも。</p>
+[29/Sep/2019 16:15:51] DEBUG [board.smplBoard.views:208] 投稿データ修正
+title:投稿テスト
+[29/Sep/2019 16:15:51] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:15:51] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 16:17:26] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:17:26] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 16:17:40] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:17:40] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 16:17:44] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:17:44] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 16:18:40] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:18:40] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 16:19:45] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:19:45] DEBUG [board.smplBoard.views:33] page_index:1
+[29/Sep/2019 16:20:59] DEBUG [board.smplBoard.views:25] Call boardList
+[29/Sep/2019 16:20:59] DEBUG [board.smplBoard.views:33] page_index:1
+[16/Nov/2019 15:18:27] DEBUG [board.smplBoard.views:25] Call boardList
+[16/Nov/2019 15:18:27] DEBUG [board.smplBoard.views:33] page_index:1

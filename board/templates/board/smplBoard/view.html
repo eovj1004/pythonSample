@@ -1,0 +1,96 @@
+{% extends "content_base.html" %}
+{% load static %}
+{% load custom_tags %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/smplBoard/view.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="content_area">
+	<input type="hidden" id="board_id" name="board_id" value="{{board.id}}" />
+	<input type="hidden" id="parent_id" name="parent_id" value="0" />
+
+	<div class="sub_title">
+		<label>詳細画面</label>
+	</div>
+
+	<div class="border_con">
+		<label id="title">{{board.title}}</label>
+
+		<div id="info">
+			<span class="left">{{board.user.user_id}}</span>
+			<span class="right font_gray">{{board.write_date|date:"Y-m-d H:i:s"}}</span>
+		</div>
+
+		<div id="content">
+			{% autoescape off %}{{board.content|decode}}{% endautoescape %}
+			
+		</div>
+	</div>
+
+	<div class="border_con mt_15 bg_gray">
+		<ul class="comment_area">
+{% for obj_comment in comment_list %}
+	{% if obj_comment.is_parent %}
+			<li class="parent">
+	{% else %}
+			<li class="reply">
+	{% endif %}
+				<div>
+					<label>
+						{{ obj_comment.user.user_id }}
+					</label>
+					<span>
+						{{ obj_comment.write_date|date:"Y.m.d H:i" }}
+					</span>
+					<div class="right">
+		{% if obj_comment.is_parent %}
+						<span id="reply{{forloop.counter0}}" class="btn_comment bg_navi pointer" onclick="setReply({{obj_comment.id}}, {{forloop.counter0}}, 'c')">reply</span>
+		{% endif %}
+		{% if obj_comment.user.id == request.session.login_user %}
+						<span id="modify{{forloop.counter0}}" class="btn_comment bg_green pointer" onclick="setReply({{obj_comment.id}}, {{forloop.counter0}}, 'u')">修正</span>
+						<span id="close{{forloop.counter0}}" class="btn_comment bg_navi pointer disp_none" onclick="cancelReply({{forloop.counter0}})">キャンセル</span>
+						<span class="btn_comment bg_red pointer" onclick="removeReply({{obj_comment.id}})">削除</span>
+		{% endif %}
+					</div>
+					<p id="comment{{forloop.counter0}}" class="txt_comment">
+						{{ obj_comment.content }}
+					</p>
+				</div>
+			</li>
+{% endfor %}
+		</ul>
+		<table class="w_full">
+			<colgroup>
+				<col style="width: 90%;" />
+				<col style="width: *;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td>
+						<textarea class="comment" id="comment" name="comment"></textarea>
+					</td>
+					<td>
+						<span onclick="addComment($('#comment').val())" class="btn_cmt_regist pointer">
+							<label class="pointer">登録</label>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="btn_area_right">
+		<span id="btn_move_list">List画面を見る</span>
+		{% if modify_flag %}
+		<span id="btn_modify">修正</span>
+		{% endif %}	
+	</div>
+</div>
+{% endblock content %}
+
+
+{% block script %}
+<script src="{% static 'js/smpl_board/view.js' %}"></script>
+{% endblock script %}

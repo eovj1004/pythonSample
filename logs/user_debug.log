@@ -1,0 +1,19 @@
+[29/Sep/2019 11:54:02] DEBUG [board.user.views:20] Call regist
+[29/Sep/2019 11:54:02] DEBUG [board.user.views:29] 
+user_id:admin
+pw:*******
+[29/Sep/2019 11:55:46] DEBUG [board.user.views:59] Call loginProcess
+[29/Sep/2019 11:55:46] DEBUG [board.user.views:65] 
+user_id:admin
+pw:*******
+[29/Sep/2019 11:55:46] DEBUG [board.user.views:74] ログイン完了
+[29/Sep/2019 12:42:45] DEBUG [board.user.views:59] Call loginProcess
+[29/Sep/2019 12:42:45] DEBUG [board.user.views:65] 
+user_id:admin
+pw:*******
+[29/Sep/2019 12:42:45] DEBUG [board.user.views:74] ログイン完了
+[16/Nov/2019 15:18:21] DEBUG [board.user.views:59] Call loginProcess
+[16/Nov/2019 15:18:21] DEBUG [board.user.views:65] 
+user_id:admin
+pw:*******
+[16/Nov/2019 15:18:21] DEBUG [board.user.views:74] ログイン完了

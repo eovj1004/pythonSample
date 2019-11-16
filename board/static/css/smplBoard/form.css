@@ -1,0 +1,23 @@
+.board_table{
+	width: 100%;
+}
+
+.board_table > tbody > tr > th {
+	vertical-align: middle;
+	text-align: left;
+	width: 150px;
+	padding-bottom: 10px; 
+}
+
+.board_table > tbody > tr > td {
+	padding-bottom: 10px; 
+}
+
+.board_table > tbody > tr > td > .setting_row > #title {
+	width: 100%; 
+}
+
+.board_table > tbody > tr > td > .setting_row {
+	width: 50%;
+	display: inline-flex;
+}
